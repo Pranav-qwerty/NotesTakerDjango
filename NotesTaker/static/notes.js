@@ -1,0 +1,9 @@
+var text = document.querySelector(".notes").innerText
+        text = text.replace("[", '')
+        text = text.replace("]", '')
+        text = text.replaceAll("Querys", '')
+        text = text.replaceAll(">", '')
+        text = text.replaceAll("<", '')
+        text = text.replaceAll(":", '')
+        text = text.replaceAll(", ", '<br>')
+        document.querySelector('.notes').innerHTML = text
